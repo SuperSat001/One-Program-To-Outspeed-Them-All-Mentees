@@ -38,7 +38,8 @@ if __name__ == '__main__':
     naive = []
     pragma = []
 
-    for i in range(1000,5000):
+    for i in range(1000,3000):
+        print(i)
         if i == 0:
             continue
         numPragma,timePragma = run_executable_with_input('./pragma',i)
@@ -53,4 +54,4 @@ if __name__ == '__main__':
     plt.xlabel('size of vector')
     plt.ylabel('time taken by respective methods')
     plt.legend()
-    plt.show()
+    plt.savefig('graph.png')
